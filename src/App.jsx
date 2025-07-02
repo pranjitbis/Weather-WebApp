@@ -50,6 +50,11 @@ export default function App() {
     }
   };
 
+  const BtnClick = () => {
+    const input = document.querySelector("input");
+    setValues(input.value);
+  };
+
   const getDate = new Date();
   const week = getDate.toLocaleString("en-US", { weekday: "long" });
   const day = getDate.getDate();
@@ -73,7 +78,7 @@ export default function App() {
       <div className="container">
         <div className="search">
           <input type="text" placeholder="Search..." onKeyDown={handleChange} />
-          <button>
+          <button onClick={BtnClick}>
             <IoIosSearch className="SearchIcon" />
           </button>
         </div>
