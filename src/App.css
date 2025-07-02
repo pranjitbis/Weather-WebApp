@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bgImg {
+  background-image: url("./assets/bg.jpg");
+}
+
+.NightBg {
+  background-image: url("./assets/bg/bg1.jpeg");
+}
+.SunBg {
+  background-image: url("./assets/bg/bg2.jpg");
+}
+
+
+.weather {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0 auto;
+  height: 700px;
+  width: 90%;
+  border-radius: 20px;
+  max-width: 550px;
+}
+
+.lightDark {
+  position: absolute;
+  top: 10%;
+  left: 95%;
+  border: none;
+  color: white;
+  font-size: 30px;
+  background-color: #0d5ea6;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 3px 11px #260d44;
+}
+
+.weatherData img {
+  height: 150px;
+}
+
+.container {
+  background: linear-gradient(
+    1deg,
+    rgb(38, 39, 39, 0.9) 28%,
+
+    rgba(228, 228, 228, 0.5) 100%
+  );
+  width: 100%;
+  border-radius: 20px;
+  padding: 50px 0;
+}
+
+.search {
+  display: flex;
+  width: 90%;
+  margin: auto auto 50px auto;
+  max-width: 430px;
+}
+
+.search input {
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(83, 83, 83, 0.616);
+  padding: 0px 20px;
+  outline: none;
+  width: 350px;
+  position: relative;
+  left: 30px;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.486);
+  letter-spacing: 0.4px;
+}
+
+.search button {
+  background-color: rgb(211, 110, 15);
+  border: navajowhite;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+  position: relative;
+  left: 50px;
+  color: white;
+  font-weight: 700;
+  width: 40px;
+  transition: 0.4s ease;
+}
+
+.search button:hover {
+  color: black;
+}
+
+.location {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: space-around;
+  color: white;
+  position: relative;
+  right: 12px;
+}
+
+.locationData {
+  display: flex;
+}
+
+#days {
+  font-size: 20px;
+  margin: 2px 0;
+  position: relative;
+  left: 10px;
+}
+
+.locationData p {
+  font-size: 20px;
+  margin: 3px 0px 0px 5px;
+}
+
+.locationIcon {
+  color: white;
+  font-size: 25px;
+}
+
+.weatherData {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: space-between;
+  margin: 50px 30px;
+}
+
+.weatherData img {
+  height: 150px;
+}
+
+.temp {
+  position: relative;
+  right: 40px;
+  margin: 30px 0;
+  color: white;
+}
+
+.temp p {
+  margin: 10px 10px;
+  font-size: 30px;
+}
+
+.temp h1 {
+  font-size: 50px;
+}
+
+.content {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: space-around;
+}
+
+.humidity {
+  display: flex;
+  color: white;
+  font-size: 20px;
+}
+
+.winSpeed {
+  display: flex;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.Drop {
+  margin: 0px 10px;
+  font-size: 30px;
+}
+
+.Previous {
+  display: flex;
+  gap: 18px;
+  margin: 50px 0;
+}
+
+.searchResul ul li {
+  list-style: none;
+  background-color: rgba(119, 119, 119, 0.281);
+  color: white;
+  height: 130px;
+  width: 90px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  padding: 20px;
+  position: relative;
+  left: 10px;
+}
+
+.searchResul ul li img {
+  width: 50px;
+}
+
+.searchResul ul li p {
+  margin: 0px 0px 10px 5px;
+}
+
+.chnage {
+  display: flex;
+  justify-content: center;
+}
+
+.chnage button {
+  background-color: #f26b0f;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  width: 250px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: 0.4s ease;
+}
+.chnage button:hover {
+  background-color: #0e0e0e;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .search input {
+    max-width: 300px;
+  }
+
+  .Previous {
+    overflow: auto;
+  }
+  .Previous::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .Previous::-webkit-scrollbar-track {
+    background: #312f2fc4;
+    border-radius: 4px;
+  }
+
+  .Previous::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 20px;
+  }
+
+  .Previous::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+}
