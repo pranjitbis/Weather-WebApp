@@ -279,14 +279,23 @@
     left: 0;
   }
 
+  .temp h1 {
+    font-size: 40px !important;
+  }
+
+  .temp p {
+    font-size: 20px;
+  }
+
   .weatherData {
     position: relative;
     right: 10px;
     gap: 20px;
   }
 
-  #imageTemp{
+  #imageTemp {
     position: relative;
     right: 10px;
+    height: 100px;
   }
 }
