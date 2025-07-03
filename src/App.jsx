@@ -91,7 +91,7 @@ export default function App() {
             <p id="days">{MainData}</p>
           </div>
           <div className="weatherData">
-            {weatherImage && <img src={weatherImage} />}
+            {weatherImage && <img id="imageTemp" src={weatherImage} />}
 
             <div className="temp">
               <h1>{Math.round(data?.list?.[0]?.main?.temp)}°C</h1>

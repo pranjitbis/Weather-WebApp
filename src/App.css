@@ -15,7 +15,6 @@
   background-image: url("./assets/bg/bg2.jpg");
 }
 
-
 .weather {
   display: flex;
   justify-content: center;
@@ -260,5 +259,34 @@
 
   .Previous::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .search input {
+    position: relative;
+    left: 0;
+    width: 280px;
+  }
+
+  .search button {
+    position: relative;
+    left: 10px;
+  }
+
+  .temp {
+    position: relative;
+    left: 0;
+  }
+
+  .weatherData {
+    position: relative;
+    right: 10px;
+    gap: 20px;
+  }
+
+  #imageTemp{
+    position: relative;
+    right: 10px;
   }
 }
