@@ -94,7 +94,11 @@ export default function App() {
             {weatherImage && <img id="imageTemp" src={weatherImage} />}
 
             <div className="temp">
-              <h1>{Math.round(data?.list?.[0]?.main?.temp)}°C</h1>
+              {data ? (
+                <h1>{Math.round(data?.list?.[0]?.main?.temp)}°C</h1>
+              ) : (
+                <h1 className="Loding">Loding...</h1>
+              )}
               <p>{data?.list?.[0]?.weather?.[0]?.main}</p>
             </div>
           </div>
